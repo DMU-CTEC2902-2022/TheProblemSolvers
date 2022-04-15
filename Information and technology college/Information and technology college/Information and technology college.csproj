@@ -120,12 +120,18 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ComputerscienceController.cs" />
+    <Compile Include="Controllers\CybersecurityController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SoftwareengineeringController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Computerscience.cs" />
     <Compile Include="Models\course.cs" />
+    <Compile Include="Models\Cyber security.cs" />
     <Compile Include="Models\Module.cs" />
+    <Compile Include="Models\Software engineering.cs" />
     <Compile Include="Models\staff.cs" />
     <Compile Include="Models\student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -166,6 +172,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Computerscience\Modules.cshtml" />
+    <Content Include="Views\Cybersecurity\Modules.cshtml" />
+    <Content Include="Views\Softwareengineering\Modules.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

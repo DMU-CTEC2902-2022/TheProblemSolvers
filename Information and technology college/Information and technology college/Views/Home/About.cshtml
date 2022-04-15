@@ -1,7 +1,70 @@
-﻿@{
-    ViewBag.Title = "About";
+﻿
+@{
+    ViewBag.Title = "About Us";
 }
 <h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+
+@* College Descrioption Paragraph 1 *@
+<p>
+    Founded in 2011, The British College offers world-class education for students in Nepal who are aspiring to gain internationally recognised qualifications from their two partner British Universities, the University of the West of England (UWE) and Leeds Beckett University (LBU).
+</p>
+
+@* College Descrioption Paragraph 2 *@
+<p>
+    In this regard, we have been successful in establishing a distinctive identity as the pioneering global college in Nepal and offer reputed UK degrees and courses which are relevant to the current job market, and enhance the employability of each and every student.
+</p>
+
+@* College Descrioption Paragraph 3 *@
+<p>
+    Our aim is to provide students with a global learning experience and worldwide opportunities - and we are defined by our local-to-global approach in the provision of our degrees and courses which are staffed by tutors and administrative personnel from the UK and Nepal. In this way, the College provides premium education that compels students and staff to be globally minded - a notion which is further encouraged by the student exchange programmes and internships that we offer with multinational companies.
+</p>
+
+@*College Descrioption Paragraph4 *@
+<p>
+    We also believe that supporting and interacting with the local community is an integral part of student life, and we are committed to achieving excellence in our research and upholding the highest standards of integrity.
+</p>
+
+@* College Image *@
+<img src="https://www.nepalcollegefair.com/storage/academic-institutes/January2021/Q8zeR1KI3RE4MGcVCfDx.jpg" width="1150" height="500">
+
+<h1>
+    1. Vision
+</h1>
+<p> To be a world-class college in Nepal offering high quality British and international qualifications equipping our graduates with the broad knowledge, skills and values they need for success in the global job market and becoming creative entrepreneurs. </p>
+<h2> 2. Mission </h2>
+<p>
+<p> To transform lives by making high-quality British education an affordable, accessible opportunity for all in Nepal, and regions;</p>
+<p> To further develop the current portfolio of qualifications with new partners and qualifications – ensuring wrap-around student support and employability skill development opportunities;</p>
+<p> To work closely with industry partners, particularly in Kathmandu to develop employability links and offer internships;</p>
+<p> To use the Industry Advisory Board contacts to broaden the reach of TBC through contacts, and enhance the student experience;</p>
+<p> To encourage student mobility by providing study trips to our sister colleges: The Woolwich College (London & Dubai);</p>
+<p> To develop research opportunities, particularly in partnership with education partners and industry.</p>
+
+
+@* Footer  *@
+<div style="background-color: dodgerblue; color:white; width: 1200px; height: 350px;   padding-left: 60px;">
+
+    <div style="display: flex;">
+        <div style="padding-top: 50px;">
+            <img src="https://yt3.ggpht.com/a-/AAuE7mCxISd7bsEZ6XV-SZQqqBWtwxJWYqdJs_V-rw=s900-mo-c-c0xffffffff-rj-k-no" height="120" width="320">
+        </div>
+        <div>
+            <ul class="nav navbar-nav" style="padding-top: 50px; padding-left: 320px; color: white; font-size: 17px;">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Course", "Course", "Course")</li>
+                <li>@Html.ActionLink("Register", "Register", "Account")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+
+    <div>
+        <b style="font-size: 30px;">The British College</b>
+        <p style="font-size: 20px;"> <br> Kathmandu Nepal</p>
+    </div>
+
+</div>

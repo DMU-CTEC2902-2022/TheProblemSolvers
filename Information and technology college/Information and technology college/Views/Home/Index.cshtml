@@ -2,30 +2,68 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+
+@*  Name of the technology college with picture  *@
+<div>
+    <b style="font-size: 42px;">Information and Technology college</b>
+    <p class="lead"> The British College</p>
+    <img src="https://www.mirage.it/media/filer_public_thumbnails_optimized/filer_public/62/e0/62e09ed7-6042-459b-9546-be1256017b2d/1.jpg__1346x808_q85_crop_subsampling-2_upscale.jpg" width="1200" height="600">
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Getting started</h2>
+        <h2>Cyber Security</h2>
         <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+            Cyber-security is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <p><a class="btn btn-default" href="~/Cybersecurity/Modules">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <h2>Computer Science</h2>
+        <p>Computer science deals with the theoretical foundations of information, algorithms and the architectures of its computation as well as practical techniques for their application. Computer science is the study of computation, automation, and information. </p>
+        <p><a class="btn btn-default" href="~/Computerscience/Modules">Learn more &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <h2>Software Engineering</h2>
+        <p> Software engineering is an engineering approach on a software development of systematics application. A software engineer is a person who applies the principles of software engineering to design, develop, maintain, test, and evaluate computer software.</p>
+        <p><a class="btn btn-default" href="~/Softwareengineering/Modules">Learn more &raquo;</a></p>
     </div>
 </div>
+
+@* Video about British college *@
+<div class="jumbotron" style="width: 1200px; display: flex; ">
+    <div class="left-pannel">
+        <iframe width="600" height="350" src="https://www.youtube.com/embed/B6XX2e0hLe8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="right-pannel" style="padding-left: 80px; padding-top: 100px; text-align: center;">
+        <p style="font-size: 20px;">The British College strives to be a world-class college in Nepal offering British and international qualifications equipping our graduates with the knowledge, skills and values they need for success in the global job market and becoming creative entrepreneurs..</p>
+    </div>
+</div>
+
+@* Footer  *@
+<div style="background-color: dodgerblue; color:white; width: 1200px; height: 350px;   padding-left: 60px;">
+
+    <div style="display: flex;">
+        <div style="padding-top: 50px;">
+            <img src="https://yt3.ggpht.com/a-/AAuE7mCxISd7bsEZ6XV-SZQqqBWtwxJWYqdJs_V-rw=s900-mo-c-c0xffffffff-rj-k-no" height="120" width="320">
+        </div>
+        <div>
+            <ul class="nav navbar-nav" style="padding-top: 50px; padding-left: 320px; color: white; font-size: 17px;">
+                <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                <li>@Html.ActionLink("Course", "Course", "Course")</li>
+                <li>@Html.ActionLink("Register", "Register", "Account")</li>
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            </ul>
+        </div>
+    </div>
+
+    <br>
+
+    <div>
+        <b style="font-size: 30px;">The British College</b>
+        <p style="font-size: 20px;"> <br> Kathmandu Nepal</p>
+    </div>
+
+</div>
+

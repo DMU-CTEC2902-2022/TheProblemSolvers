@@ -14,6 +14,7 @@ namespace Information_and_technology_college.Models
         public virtual string LastName { get; set; }
         public virtual DateTime dob { get; set; }
         public virtual string Address { get; set; }
-        public virtual string emailaddress { get; set; }
+        public virtual string emailaddress
+        { get; set; }
     }
 }
